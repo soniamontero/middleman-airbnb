@@ -1,0 +1,39 @@
+<div id="flats">
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%), url('https://kitt.lewagon.com/placeholder/cities/#{city_slug}'); height: 50vh; background-position: center;">
+  </div>
+  <div class="flat-content">
+    <% flat = data.flats[owner] %>
+    <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle" %>
+    <p><%= flat.name %></p>
+    <h1><%= flat.description %></h1>
+    <p><%= flat.city_name %></p>
+    <% end %>
+  </div>
+</div>
+
+
+<div class="header-flat">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+        <div class="header-flat-detail">
+          <div class="header-flat-owner  text-center">
+            <img src="https://kitt.lewagon.com/placeholder/users/#{owner}" class="img-circle" width="80" alt="#{owner}" />
+            <p>#{owner}</p>
+          </div>
+          <div class="header-flat-name">
+            <h1>Charming room in Montmartre</h1>
+            <p>Paris, France</p>
+            <p class="rating">
+              <i class="fa fa-star" style="color: #ffb400"></i>
+              <i class="fa fa-star" style="color: #ffb400"></i>
+              <i class="fa fa-star" style="color: #ffb400"></i>
+              <i class="fa fa-star" style="color: #ffb400"></i>
+              <i class="fa fa-star" style="color: #cacccd"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

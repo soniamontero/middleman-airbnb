@@ -1,0 +1,43 @@
+rahel-weiss:
+  name: Lovely flat
+  description: Small and cosy, smart and arty.
+  city_name: Melbourne
+  breakfast: false
+  rating: 4
+  city_slug: melbourne
+soniamontero:
+  name: Cosy flat
+  description: Large and modern, full of pattern.
+  city_name: Paris
+  breakfast: true
+  rating: 5
+  city_slug: paris
+rahelsmith:
+  name: Pity flat
+  description: Medium et banal, nom d'un petit cheval.
+  city_name: Rio
+  breakfast: true
+  rating: 5
+  city_slug: rio
+soniasmith:
+  name: Classy flat
+  description: Extra large and funny, welcome honey.
+  city_name: Berlin
+  breakfast: true
+  rating: 5
+  city_slug: berlin
+johnsmith:
+  name: Outrageous flat
+  description: Normal and russian, ready for the liliputian.
+  city_name: Sidney
+  breakfast: true
+  rating: 5
+  city_slug: sidney
+janesmith:
+  name: Not a flat
+  description: More like a garden, you'll get frozen.
+  city_name: Bali
+  breakfast: true
+  rating: 5
+  city_slug: bali
+

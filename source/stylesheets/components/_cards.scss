@@ -6,6 +6,7 @@
   color: white;
   position: relative;
   box-shadow: 5px 10px 20px #888888;
+  margin: 10px 10px;
 }
 .card-user {
   position: absolute;
@@ -43,11 +44,12 @@
   z-index: 2;
   background: black;
   opacity: 0;
+
 }
 .card-link:hover {
   opacity: 0.1;
 }
 
 .cards {
-  margin: 25px 10px
+  margin: 25px 25px;
 }

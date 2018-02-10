@@ -3,61 +3,33 @@ title: Le Wagon - Middleman
 ---
 
 
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://www.e-interjeras.lt/uploads/images/2017/10/2-tamsaus-medzio-grindys.jpg');">
   <div class="banner-content">
-    <h1>LE PETIT TRAIN</h1>
-    <p>Learn to code with us! Sooooo much fun.</p>
-    <a class="btn btn-primary btn-custom-font">Click. Here. NOW.</a>
+    <h1>Earthbnb</h1>
+    <p>Come to my house. NOW.</p>
+    <a class="btn btn-primary btn-custom-font">Don't click.</a>
   </div>
 </div>
 
-<!-- <div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
-  </div>
-</div> -->
-<div class="container">
+<div class="container" id="flats">
   <div class="cards">
     <div class="row">
-      <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-          <div class="card-category">Popular</div>
+
+      <% data.flats.each do |owner, flat| %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
+          <div class="card-category"><%= flat.city_name %></div>
           <div class="card-description">
-            <h2>Shanghai</h2>
-            <p>A lot of people there, pretty cool though.</p>
+            <h3><%= flat.name %></h3>
+            <p><%= flat.description %></p>
           </div>
-          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-          <a class="card-link" href="#" ></a>
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class:"card-user" %>
+          <%= link_to "", "flats/#{owner}.html", class: "card-link" %>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://www.covermore.com.au/sites/default/files/paris-a-city-of-relaxation-romance-lrg.jpg');">
-          <div class="card-category">Users' choice</div>
-          <div class="card-description">
-            <h2>Paris</h2>
-            <p>Parisians everywhere.</p>
-          </div>
-          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-          <a class="card-link" href="#" ></a>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://lacasaflamboyan.com/wp-content/uploads/2016/05/oldhavana4.jpg');">
-          <div class="card-category">Best cigars ever</div>
-          <div class="card-description">
-            <h2>La Havana</h2>
-            <p>Rhum and cigars.</p>
-          </div>
-          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-          <a class="card-link" href="#" ></a>
-        </div>
-      </div>
+      <% end %>
     </div>
   </div>
+</div>
+</div>
 </div>
